@@ -1,0 +1,13 @@
+.card{
+    border:  solid 1px;
+    width:500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: hsla(hue, saturation, lightness, alpha);
+}
+button{
+    margin-top:11px;
+}

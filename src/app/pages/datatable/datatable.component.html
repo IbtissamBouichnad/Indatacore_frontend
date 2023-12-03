@@ -1,0 +1,33 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--pour arriver a voir les donnes du tableau il faut lancer le json server avec la cmde json-server --watch db.json  -->
+      <tr *ngFor="let row of data">
+        <td>{{ row.id }}</td>
+        <td>{{ row.name }}</td>
+        <td>{{ row.description }}</td>
+        <td>
+          <button (click)="editData(row)">Edit</button>
+          <button (click)="deleteData(row.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="edit-table">
+    <p>Do you want to edit a row ? enter your data here :</p>
+    <form #editForm="ngForm" (ngSubmit)="onSubmit(editForm)">
+        <input type="number" name="id" [(ngModel)]="selectedItem.id" required>
+        <input type="text" name="name" [(ngModel)]="selectedItem.name" required>
+        <input type="text" name="description" [(ngModel)]="selectedItem.description" required>
+        <button type="submit">Save</button>
+    </form>
+  </div>
+  
+  

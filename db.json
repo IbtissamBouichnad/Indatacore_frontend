@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "data": [
+    {
+      "id": 2,
+      "name": "mohammed",
+      "description": "consultant"
+    },
+    {
+      "id": 3,
+      "name": "ibtissam",
+      "description": "eleve"
+    }
+  ],
+  "signupUsers": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
