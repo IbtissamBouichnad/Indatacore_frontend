@@ -2,8 +2,8 @@ import { Component, NgModuleDecorator, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { SidenavComponent } from "../../components/sidenav/sidenav.component";
 
 interface DataItem {
   id: number;
@@ -14,11 +14,11 @@ interface DataItem {
 
 
 @Component({
-  selector: 'app-datatable',
-  standalone: true,
-  imports: [DatatableComponent,MatTableModule,CommonModule,FormsModule,HttpClientModule],
-  templateUrl: './datatable.component.html',
-  styleUrl: './datatable.component.css'
+    selector: 'app-datatable',
+    standalone: true,
+    templateUrl: './datatable.component.html',
+    styleUrl: './datatable.component.css',
+    imports: [DatatableComponent, MatTableModule, CommonModule, FormsModule, HttpClientModule, SidenavComponent]
 })
 
 

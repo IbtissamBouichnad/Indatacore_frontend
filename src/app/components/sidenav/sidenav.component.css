@@ -1,6 +1,7 @@
 .example-container {
     height: 700px;
     border: 1px solid rgba(0, 0, 0, 0.5);
+    width: fit-content;
   }
   .example-sidenav {
      user-select: none;

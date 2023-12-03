@@ -1,13 +1,14 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import Chart from 'chart.js/auto';
+import { SidenavComponent } from "../../components/sidenav/sidenav.component";
 
 @Component({
-  selector: 'app-dashboard',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+    selector: 'app-dashboard',
+    standalone: true,
+    templateUrl: './dashboard.component.html',
+    styleUrl: './dashboard.component.css',
+    imports: [RouterOutlet, RouterLink, SidenavComponent]
 })
 export class DashboardComponent implements AfterViewInit {
   ngAfterViewInit(): void {
